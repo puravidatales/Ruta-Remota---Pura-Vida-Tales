@@ -125,6 +125,25 @@
   .btn-main:hover{background:var(--accent);transform:translateY(-2px)}
   .hero-price-note{font-size:.85rem;color:var(--ink-soft)}
   .hero-price-note s{color:var(--ink-faint)}
+  .hero-price-card{
+    margin:32px auto 0;max-width:460px;
+    background:var(--ink);color:var(--paper);border-radius:var(--radius);
+    padding:24px 20px 20px;text-align:center;
+    box-shadow:0 20px 50px rgba(22,21,26,.2);
+  }
+  .hero-price-card .hpc-label{
+    display:block;font-size:.68rem;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:rgba(244,243,240,.55);margin-bottom:18px;
+  }
+  .hpc-steps{display:flex;align-items:stretch;justify-content:center}
+  .hpc-step{display:flex;flex-direction:column;align-items:center;gap:5px;flex:1;padding:0 10px}
+  .hpc-step + .hpc-step{border-left:1px solid rgba(244,243,240,.15)}
+  .hpc-step-price{font-weight:800;letter-spacing:-.02em;font-size:1.3rem;color:rgba(244,243,240,.4)}
+  .hpc-step-note{font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,243,240,.4)}
+  .hpc-step.done .hpc-step-price{text-decoration:line-through;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+  .hpc-step.now .hpc-step-price{font-size:2.2rem;color:var(--g-orange)}
+  .hpc-step.now .hpc-step-note{color:var(--paper);font-weight:700}
+  .hero-price-card .hpc-note{margin-top:18px;font-size:.78rem;color:rgba(244,243,240,.75)}
   .about-photo{position:relative}
   .about-photo img{
     width:100%;height:auto;display:block;border-radius:var(--radius);
@@ -354,7 +373,7 @@
   <div class="nav-inner">
     <a class="nav-logo" href="#top">Pura Vida Tales</a>
     <span class="nav-date">Webinar en vivo · Mar 4 Ago · 7 a 9 PM Costa Rica</span>
-    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?bid=1784129251902" rel="noopener">Reservar mi lugar</a>
+    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reservar mi lugar</a>
   </div>
 </nav>
 
@@ -364,11 +383,28 @@
     <p class="hero-times">7 PM 🇨🇷 Costa Rica y 🇲🇽 México · 8 PM 🇨🇴 Colombia · 9 PM 🇨🇱 Chile · 10 PM 🇦🇷 Argentina</p>
     <h1 class="hero-title">Ruta Remota: <span class="serif">el mapa real</span> para conseguir tu primer trabajo remoto</h1>
     <p class="hero-sub">Si llevás meses diciendo <em>"quiero trabajar remoto pero no sé por dónde empezar"</em>, este es tu punto de partida. 2 horas en vivo con todo lo que aprendí en 7 años diseñando una vida que amo, para que empieces a diseñar la tuya.</p>
-    <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?bid=1784129251902" rel="noopener">Reserva tu lugar por $22</a>
-      <span class="hero-price-note">Precio de apertura: <strong>$22</strong> <s>$33</s> solo hasta el sábado 25 de julio.</span>
+    <div class="hero-price-card">
+      <span class="hpc-label">El precio sube cada semana</span>
+      <div class="hpc-steps">
+        <div class="hpc-step done">
+          <span class="hpc-step-price">$22</span>
+          <span class="hpc-step-note">Ya terminó</span>
+        </div>
+        <div class="hpc-step now">
+          <span class="hpc-step-price">$33</span>
+          <span class="hpc-step-note">Precio de hoy</span>
+        </div>
+        <div class="hpc-step next">
+          <span class="hpc-step-price">$44</span>
+          <span class="hpc-step-note">Desde el 3 ago</span>
+        </div>
+      </div>
+      <p class="hpc-note">Precio de lanzamiento válido hasta el domingo 2 de agosto</p>
     </div>
-    <p class="cd-label">El precio de apertura termina en</p>
+    <div class="hero-cta-row">
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reserva tu lugar por $33</a>
+    </div>
+    <p class="cd-label">El precio de lanzamiento termina en</p>
     <div class="countdown" id="countdown">
       <div class="cd-box"><strong id="cd-d">00</strong><span>Días</span></div>
       <div class="cd-box"><strong id="cd-h">00</strong><span>Horas</span></div>
@@ -495,7 +531,7 @@
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">Tu entrada incluye</span>
-      <h2>Más de $144 en valor y 7 años de experiencia <span class="serif">por un precio de apertura</span></h2>
+      <h2>Más de $144 en valor y 7 años de experiencia <span class="serif">por un precio de lanzamiento</span></h2>
     </div>
     <div class="offer-grid reveal">
       <div class="offer">
@@ -539,15 +575,15 @@
     <p class="pains-closer reveal" style="margin-top:36px">Más de <span class="serif">$144 en bonos</span> incluidos con tu entrada.</p>
 
     <div class="ladder reveal">
-      <div class="tier now">
+      <div class="tier past">
         <span class="t-label">Precio de apertura</span>
         <div class="t-price">$22</div>
-        <p class="t-note">Hasta el sábado 25 de julio · Nunca volverá a este precio</p>
+        <p class="t-note">Terminó el sábado 25 de julio</p>
       </div>
-      <div class="tier">
+      <div class="tier now">
         <span class="t-label">Precio de lanzamiento</span>
         <div class="t-price">$33</div>
-        <p class="t-note">Del 26 de julio al 2 de agosto</p>
+        <p class="t-note">Hasta el domingo 2 de agosto · Después sube a $44</p>
       </div>
       <div class="tier">
         <span class="t-label">Últimas 48 horas</span>
@@ -556,7 +592,7 @@
       </div>
     </div>
     <div class="ladder-cta reveal">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?bid=1784129251902" rel="noopener">Reservar mi lugar por $22</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reservar mi lugar por $33</a>
       <p>Pago seguro por Hotmart · Tarjeta de crédito o débito · Es mi primer webinar en vivo: el precio nunca volverá a estar así de bajo</p>
     </div>
   </div>
@@ -606,7 +642,7 @@
     <h2>Tu vida remota no empieza <span class="serif">"algún día".</span><br>Empieza el 4 de agosto.</h2>
     <p>2 horas. Un mapa completo. 7 años de experiencia real. Y una verdad simple: <strong>este precio nunca volverá a estar así de bajo.</strong></p>
     <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?bid=1784129251902" rel="noopener">Quiero mi lugar desde $22</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Quiero mi lugar desde $33</a>
     </div>
   </div>
 </section>
@@ -619,14 +655,14 @@
 </footer>
 
 <script>
-  // Countdown: fin del precio de apertura (domingo 19 julio, 23:59 Costa Rica, UTC-6)
-  const cdDeadline = new Date("2026-07-26T05:59:59Z").getTime();
+  // Countdown: fin del precio de lanzamiento (domingo 2 de agosto, 23:59 Costa Rica, UTC-6)
+  const cdDeadline = new Date("2026-08-03T05:59:59Z").getTime();
   const cdLabel = document.querySelector(".cd-label");
   function cdTick(){
     const diff = cdDeadline - Date.now();
     if(diff <= 0){
       document.getElementById("countdown").style.display = "none";
-      if(cdLabel) cdLabel.textContent = "El precio de apertura terminó. Precio actual: $33";
+      if(cdLabel) cdLabel.textContent = "El precio de lanzamiento terminó. Precio actual: $44";
       return;
     }
     const d = Math.floor(diff/86400000),
