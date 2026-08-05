@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ruta Remota: Webinar en vivo | Pura Vida Tales</title>
-<meta name="description" content="Webinar en vivo: el mapa real para conseguir tu primer trabajo remoto. 7 años de experiencia, 39 países, un sistema probado. Martes 4 de agosto, 7PM Costa Rica.">
+<title>Ruta Remota: Accedé a la grabación (replay) | Pura Vida Tales</title>
+<meta name="description" content="Grabación (replay) de Ruta Remota: el mapa real para conseguir tu primer trabajo remoto. 7 años de experiencia, 39 países, un sistema probado. Acceso completo a la grabación, disponible por tiempo limitado.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
@@ -133,15 +133,10 @@
     border:1px solid rgba(224,102,47,.4);
   }
   .hero-price-card .hpc-label{
-    display:block;font-weight:900;letter-spacing:.04em;
-    text-transform:uppercase;margin-bottom:16px;
-    font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.05;
+    display:block;font-weight:700;letter-spacing:.02em;
+    margin-bottom:16px;
+    font-size:clamp(1.05rem,2.6vw,1.3rem);line-height:1.2;
     color:var(--g-orange);
-    animation:hpcPulse 1.8s ease-in-out infinite;
-  }
-  @keyframes hpcPulse{
-    0%,100%{opacity:1;text-shadow:0 0 18px rgba(224,102,47,.35)}
-    50%{opacity:.82;text-shadow:0 0 30px rgba(224,102,47,.6)}
   }
   .hpc-steps{display:flex;align-items:stretch;justify-content:center}
   .hpc-step{display:flex;flex-direction:column;align-items:center;gap:5px;flex:1;padding:0 10px}
@@ -189,19 +184,26 @@
     max-width:720px;margin:0 auto;
   }
   .about-quote .sig{margin-top:18px;font-size:.8rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
-  .countdown{
-    margin:26px auto 0;display:flex;gap:10px;justify-content:center;align-items:flex-start;
+  .hero-top-cta{margin:32px auto 0;display:flex;flex-direction:column;align-items:center;gap:12px}
+  .hero-top-price{display:flex;align-items:baseline;gap:12px;justify-content:center}
+  .hero-top-was{font-size:2.4rem;font-weight:800;color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--accent);text-decoration-thickness:3px}
+  .hero-top-now{font-size:2.4rem;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+  .hero-reviews{
+    margin:40px auto 0;max-width:900px;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
   }
-  .cd-box{
-    background:var(--ink);color:var(--paper);border-radius:10px;
-    min-width:64px;padding:12px 8px 9px;text-align:center;
+  .hero-review{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;text-align:left;position:relative;
+    box-shadow:0 14px 34px rgba(22,21,26,.08);
   }
-  .cd-box strong{display:block;font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
-  .cd-box span{display:block;margin-top:5px;font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,243,240,.65)}
-  .cd-label{
-    margin:16px auto 0;font-size:.72rem;font-weight:600;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--ink-soft);text-align:center;
-  }
+  .hero-review::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--radius) var(--radius) 0 0}
+  .hero-review:nth-child(1)::before{background:var(--g-teal)}
+  .hero-review:nth-child(2)::before{background:var(--g-lilac)}
+  .hero-review:nth-child(3)::before{background:var(--g-orange)}
+  .hero-review .stars{display:block;color:var(--accent);font-size:.95rem;letter-spacing:.14em;margin-bottom:12px}
+  .hero-review .quote{font-family:'Archivo',system-ui,sans-serif;font-weight:400;font-size:.98rem;line-height:1.55;color:var(--ink)}
+  .hero-review .sig{margin-top:14px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
   .hero-stats{
     margin:52px auto 0;display:flex;justify-content:center;gap:0;flex-wrap:wrap;
     border:1px solid var(--line);border-radius:var(--radius);
@@ -393,40 +395,55 @@
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#top">Pura Vida Tales</a>
-    <span class="nav-date">Webinar en vivo · Mar 4 Ago · 7 a 9 PM Costa Rica</span>
-    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reservar mi lugar</a>
+    <span class="nav-date">Grabación (replay) disponible · Acceso por tiempo limitado</span>
+    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar la grabación</a>
   </div>
 </nav>
 
 <header class="hero grain" id="top">
   <div class="hero-inner">
-    <span class="hero-badge"><span class="live"></span> Webinar en vivo · Martes 4 de agosto</span>
-    <p class="hero-times">7 PM 🇨🇷 Costa Rica y 🇲🇽 México · 8 PM 🇨🇴 Colombia · 9 PM 🇨🇱 Chile · 10 PM 🇦🇷 Argentina</p>
+    <span class="hero-badge"><span class="live"></span> Grabación (replay) disponible · Acceso inmediato</span>
+    <p class="hero-times">El webinar en vivo del martes 4 de agosto ya pasó, pero tenés acceso a la grabación (replay) de inmediato por 7 días</p>
     <h1 class="hero-title">Ruta Remota: <span class="serif">el mapa real</span> para conseguir tu primer trabajo remoto</h1>
-    <p class="hero-sub">Si llevás meses diciendo <em>"quiero trabajar remoto pero no sé por dónde empezar"</em>, este es tu punto de partida. 2 horas en vivo con todo lo que aprendí en 7 años diseñando una vida que amo, para que empieces a diseñar la tuya. Esta es la única vez que vas a poder entrar a este precio.</p>
+    <div class="hero-top-cta">
+      <span class="hero-top-price"><span class="hero-top-was">$67</span><span class="hero-top-now">$44</span></span>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá la grabación (replay) por $44</a>
+      <span class="hero-bonus-line">Incluye $89 en bonos</span>
+    </div>
+    <div class="hero-reviews">
+      <div class="hero-review">
+        <span class="stars">★★★★★</span>
+        <p class="quote">"Me pareció excelente tu historia y lo que compartiste: las herramientas, todos los detalles técnicos. A pesar de haber sido tanta información, lo entregaste de forma que no fue pesado ni aburrido, todo muy claro y fácil de seguir."</p>
+        <p class="sig">Participante del taller</p>
+      </div>
+      <div class="hero-review">
+        <span class="stars">★★★★★</span>
+        <p class="quote">"Todo estuvo súper cool, súper útil toda la información. Me encantó trabajar el mindset primero e ir desde ahí. Siempre es bueno escuchar la voz de la experiencia. Qué dichosos los que estuvimos."</p>
+        <p class="sig">Participante del taller</p>
+      </div>
+      <div class="hero-review">
+        <span class="stars">★★★★★</span>
+        <p class="quote">"Muchas gracias Caro, súper provechoso el taller."</p>
+        <p class="sig">Participante del taller</p>
+      </div>
+    </div>
+    <p class="hero-sub">Si llevás meses diciendo <em>"quiero trabajar remoto pero no sé por dónde empezar"</em>, este es tu punto de partida. 2 horas de increíble valor y transformación, con todo lo que aprendí en 7 años diseñando una vida que amo, para que empieces a diseñar la tuya. El acceso a la grabación (replay) cierra pronto.</p>
     <div class="hero-price-card">
-      <span class="hpc-label">ÚLTIMA OPORTUNIDAD</span>
+      <span class="hpc-label">Acceso inmediato a la grabación (replay)</span>
       <div class="hpc-steps">
         <div class="hpc-step now">
           <span class="hpc-price-row">
-            <span class="hpc-was">$44</span>
-            <span class="hpc-step-price">$33</span>
+            <span class="hpc-was">$67</span>
+            <span class="hpc-step-price">$44</span>
           </span>
-          <span class="hpc-step-note">Precio de lanzamiento</span>
+          <span class="hpc-step-note">2 horas de increíble valor y transformación</span>
         </div>
       </div>
-      <p class="hpc-note">Este es el precio más bajo que vas a ver. Después de esto, no vuelve.</p>
+      <p class="hpc-note">El webinar en vivo ya pasó, pero podés tener acceso a la grabación (replay) de inmediato, disponible por 7 días completos. El precio sube a $67 en una semana.</p>
     </div>
     <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reserva tu lugar por $33</a>
-      <span class="hero-bonus-line">+ hasta $200 en bonos gratis al reservar</span>
-    </div>
-    <p class="cd-label">El taller empieza en</p>
-    <div class="countdown" id="countdown">
-      <div class="cd-box"><strong id="cd-d">00</strong><span>Días</span></div>
-      <div class="cd-box"><strong id="cd-h">00</strong><span>Horas</span></div>
-      <div class="cd-box"><strong id="cd-m">00</strong><span>Min</span></div>
-      <div class="cd-box"><strong id="cd-s">00</strong><span>Seg</span></div>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá la grabación (replay) por $44</a>
+      <span class="hero-bonus-line">+ $89 en bonos gratis al comprar</span>
     </div>
     <div class="hero-stats">
       <div><strong>7 años</strong><span>trabajando remoto</span></div>
@@ -477,7 +494,7 @@
 <section id="mapa" class="grain">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">El itinerario · 2 horas en vivo</span>
+      <span class="eyebrow">El itinerario · 2 horas de contenido</span>
       <h2 style="color:var(--paper)">Las 6 paradas de tu <span class="serif">Ruta Remota</span></h2>
       <p>No es teoría de internet. Es lo que a mí me funcionó, paso a paso, listo para que lo apliques.</p>
     </div>
@@ -516,10 +533,11 @@
         <span class="stop-dot">06</span>
         <span class="tagline">Acción</span>
         <h3>Tu roadmap: <span class="serif">qué hacer primero</span></h3>
-        <p>Salís con un paso a paso claro para tus próximas semanas, más espacio en vivo para tus preguntas. Y te cuento cómo seguir después si querés ir más profundo.</p>
+        <p>Salís con un paso a paso claro para tus próximas semanas, más las preguntas de otros asistentes respondidas en la grabación. Y te cuento cómo seguir después si querés ir más profundo.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <section id="caro">
   <div class="container">
@@ -547,24 +565,24 @@
 <section id="entrada">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">Tu entrada incluye</span>
-      <h2>Más de $144 en valor y 7 años de experiencia <span class="serif">por un precio de lanzamiento</span></h2>
+      <span class="eyebrow">Tu acceso incluye</span>
+      <h2>$89 en bonos y 7 años de experiencia <span class="serif">en una sola grabación</span></h2>
     </div>
     <div class="offer-grid reveal">
       <div class="offer">
-        <span class="mini">En vivo</span>
-        <h3>2 horas por Zoom</h3>
-        <p>Martes 4 de agosto, de 7:00 a 9:00 PM Costa Rica. En español, conmigo en vivo. No es un video pregrabado.</p>
+        <span class="mini">Grabación</span>
+        <h3>2 horas completas</h3>
+        <p>El webinar entero, tal como pasó en vivo el martes 4 de agosto. En español, sin cortes.</p>
       </div>
       <div class="offer">
         <span class="mini">Q&amp;A</span>
-        <h3>Tus preguntas, respondidas</h3>
-        <p>Espacio en vivo para preguntarme lo que quieras sobre tu situación específica.</p>
+        <h3>Las preguntas de los asistentes</h3>
+        <p>La ronda de preguntas en vivo quedó incluida en la grabación, con casos reales de otras personas en tu misma situación.</p>
       </div>
       <div class="offer">
-        <span class="mini">Replay</span>
-        <h3>Grabación por 1 semana</h3>
-        <p>Si no podés en vivo o querés repasar, tenés el replay durante 7 días completos después del evento.</p>
+        <span class="mini">Acceso</span>
+        <h3>Mirala cuando quieras</h3>
+        <p>Acceso inmediato apenas comprás, disponible por 7 días completos. Ideal si preferís avanzar a tu ritmo.</p>
       </div>
       <div class="offer">
         <span class="mini">Bonus</span>
@@ -574,8 +592,8 @@
     </div>
 
     <div class="section-head center reveal" style="margin-top:76px">
-      <span class="eyebrow">Bonos de lanzamiento</span>
-      <h2>Y además, <span class="serif">te llevás hasta $200 gratis</span></h2>
+      <span class="eyebrow">Bonos incluidos</span>
+      <h2>Y además, <span class="serif">te llevás $89 gratis</span></h2>
     </div>
     <div class="offer-grid reveal">
       <div class="offer" style="border-top:3px solid var(--g-teal)">
@@ -593,32 +611,27 @@
         <h3>Plantilla de cover letter</h3>
         <p>La estructura que uso para escribir cartas de presentación que sí leen, personalizables en minutos para cada aplicación.</p>
       </div>
-      <div class="offer" style="border-top:3px solid var(--g-orange)">
-        <span class="mini">Bono 4 · Valor $111 · Rifa</span>
-        <h3>Rifa: sesión 1:1 conmigo</h3>
-        <p>Entre todos los asistentes en vivo, rifaré una sesión privada de 1 hora donde podés preguntarme lo que quieras sobre tu caso.</p>
-      </div>
     </div>
-    <p class="pains-closer reveal" style="margin-top:36px">Hasta <span class="serif">$200 en bonos</span> incluidos con tu entrada: plantilla de CV, tracker de Notion, plantilla de cover letter, y la rifa de una sesión 1:1 entre participantes.</p>
+    <p class="pains-closer reveal" style="margin-top:36px">$89 en bonos incluidos con tu acceso: <span class="serif">plantilla de CV, tracker de Notion y plantilla de cover letter.</span></p>
 
     <div class="ladder reveal">
       <div class="tier past">
-        <span class="t-label">Precio de apertura</span>
-        <div class="t-price">$22</div>
-        <p class="t-note">Terminó el sábado 25 de julio</p>
+        <span class="t-label">Webinar en vivo</span>
+        <div class="t-price">$33</div>
+        <p class="t-note">Ya pasó · Martes 4 de agosto</p>
       </div>
       <div class="tier now">
-        <span class="t-label">Última oportunidad</span>
+        <span class="t-label">Grabación</span>
         <span class="t-price-row">
-          <span class="t-was">$44</span>
-          <span class="t-price">$33</span>
+          <span class="t-was">$67</span>
+          <span class="t-price">$44</span>
         </span>
-        <p class="t-note">Precio de lanzamiento · Se cierra en cualquier momento</p>
+        <p class="t-note">2 horas de increíble valor y transformación · Sube a $67 en una semana</p>
       </div>
     </div>
     <div class="ladder-cta reveal">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Reservar mi lugar por $33</a>
-      <p>Pago seguro por Hotmart · Tarjeta de crédito o débito · Es mi primer webinar en vivo: el precio nunca volverá a estar así de bajo</p>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar la grabación (replay) por $44</a>
+      <p>Pago seguro por Hotmart · Tarjeta de crédito o débito · Acceso inmediato por 7 días desde que comprás</p>
     </div>
   </div>
 </section>
@@ -639,24 +652,20 @@
         <p>Para este webinar no: es 100% en español. Para el trabajo remoto, te lo digo sin filtro: con inglés es más fácil conseguir trabajo remoto y acceder a los mejores salarios. Pero solo con español también es posible, y en el webinar te muestro dónde están esas oportunidades y cómo mejorar tu inglés mientras aplicás, no después.</p>
       </details>
       <details>
-        <summary>¿Qué pasa si no puedo conectarme en vivo?</summary>
-        <p>Recibís la grabación y podés verla durante 1 semana completa después del evento. Eso sí: el espacio de preguntas en vivo y la rifa de la sesión 1:1 solo pasan una vez, así que si podés estar, vale la pena.</p>
+        <summary>¿Ya pasó el webinar en vivo, puedo comprar igual?</summary>
+        <p>Sí. El webinar en vivo fue el martes 4 de agosto, pero apenas comprás tenés acceso inmediato a la grabación completa. No te perdiste nada del contenido.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto tiempo tengo acceso a la grabación (replay)?</summary>
+        <p>Acceso inmediato por 7 días completos desde que comprás. Una vez que se cierra, no vuelve a abrir, así que te recomiendo verlo apenas puedas.</p>
       </details>
       <details>
         <summary>¿Cómo pago?</summary>
         <p>Por Hotmart, con tarjeta de crédito o débito. Es la plataforma líder de productos digitales en Latinoamérica. Pago 100% seguro y recibís tu acceso por correo al instante.</p>
       </details>
       <details>
-        <summary>¿Cómo funciona la rifa de la sesión 1:1?</summary>
-        <p>Entre todas las personas que estén conectadas en vivo el 4 de agosto, sortearé una sesión privada de 1 hora conmigo (valor $111). Se anuncia el ganador o ganadora al final del webinar. Otra razón para estar en vivo y no solo ver el replay.</p>
-      </details>
-      <details>
         <summary>Tengo otra pregunta, ¿dónde escribo?</summary>
         <p>Escribime a hola@puravidatales.com o por DM a @puravidatales en Instagram y te respondo personalmente.</p>
-      </details>
-      <details>
-        <summary>¿A qué hora es en mi país?</summary>
-        <p>🇨🇷 Costa Rica, 🇲🇽 México (CDMX) y Centroamérica: 7 a 9 PM · 🇨🇴 Colombia, 🇵🇪 Perú y 🇪🇨 Ecuador: 8 a 10 PM · 🇨🇱 Chile, 🇧🇴 Bolivia y 🇻🇪 Venezuela: 9 a 11 PM · 🇦🇷 Argentina y 🇺🇾 Uruguay: 10 PM a 12 AM · 🇪🇸 España: 3 a 5 AM del miércoles (para vos existe el replay de 1 semana 😉).</p>
       </details>
     </div>
   </div>
@@ -665,10 +674,10 @@
 <section class="final grain">
   <div class="final-inner reveal">
     <h2>Esto es. <span class="serif">No hay otra vuelta.</span><br>Tu vida remota empieza acá.</h2>
-    <p>2 horas. Un mapa completo. 7 años de experiencia real. Y una verdad simple: <strong>este precio nunca volverá a estar así de bajo.</strong></p>
+    <p>2 horas. Un mapa completo. 7 años de experiencia real. Y una verdad simple: <strong>cuando se cierra el acceso a la grabación (replay), no vuelve a abrir.</strong></p>
     <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=79w83l0h" rel="noopener">Quiero mi lugar desde $33</a>
-      <span class="hero-bonus-line">+ hasta $200 en bonos gratis, solo por reservar ahora</span>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Quiero ver la grabación (replay) por $44</a>
+      <span class="hero-bonus-line">+ $89 en bonos gratis, solo por comprar ahora</span>
     </div>
   </div>
 </section>
@@ -681,28 +690,6 @@
 </footer>
 
 <script>
-  // Countdown: inicio del taller en vivo (martes 4 de agosto, 7 PM Costa Rica, UTC-6)
-  const cdDeadline = new Date("2026-08-05T01:00:00Z").getTime();
-  const cdLabel = document.querySelector(".cd-label");
-  function cdTick(){
-    const diff = cdDeadline - Date.now();
-    if(diff <= 0){
-      document.getElementById("countdown").style.display = "none";
-      if(cdLabel) cdLabel.textContent = "¡El taller ya empezó!";
-      return;
-    }
-    const d = Math.floor(diff/86400000),
-          h = Math.floor(diff/3600000)%24,
-          m = Math.floor(diff/60000)%60,
-          sec = Math.floor(diff/1000)%60;
-    document.getElementById("cd-d").textContent = String(d).padStart(2,"0");
-    document.getElementById("cd-h").textContent = String(h).padStart(2,"0");
-    document.getElementById("cd-m").textContent = String(m).padStart(2,"0");
-    document.getElementById("cd-s").textContent = String(sec).padStart(2,"0");
-    setTimeout(cdTick, 1000);
-  }
-  cdTick();
-
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.12});
