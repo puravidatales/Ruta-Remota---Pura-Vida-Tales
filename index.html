@@ -36,11 +36,12 @@
 
   /* ---- hero photo ---- */
   .hero{
-    width:150px;
-    aspect-ratio:2/1;
+    width:220px;
+    height:220px;
     overflow:hidden;
-    border-radius:14px;
-    margin:28px auto 0;
+    border-radius:50%;
+    margin:32px auto 0;
+    box-shadow:0 0 0 6px var(--paper), 0 0 0 8px var(--line);
   }
   .hero img{
     width:100%;
@@ -165,6 +166,45 @@
   }
   .cta svg{ width:14px; height:14px; }
 
+  /* compact (half-size featured) card: CV Ganador */
+  a.card.compact{
+    padding:16px 18px 15px;
+    position:relative;
+    overflow:hidden;
+  }
+  a.card.compact::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:4px;
+    background:linear-gradient(90deg,#9CC8C4,#8FA8D6,#B79BD6,#DB8FBE,#E8813F,#E0662F);
+  }
+  a.card.compact .kicker{
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    color:var(--orange);
+    margin-bottom:5px;
+    display:block;
+  }
+  a.card.compact h3{
+    font-size:15px;
+    font-weight:800;
+    margin:0 0 5px;
+    line-height:1.25;
+  }
+  a.card.compact p{
+    font-size:12.5px;
+    line-height:1.45;
+    color:var(--ink-soft);
+    margin:0 0 11px;
+  }
+  a.card.compact .cta{
+    padding:8px 14px;
+    font-size:12.5px;
+  }
+
   /* standard (medium) cards: Ruta Remota / Sin Tiquete de Regreso */
   .card.standard{
     padding:20px 22px;
@@ -273,8 +313,8 @@
     <!-- Mentoría grupal: Sin Tiquete de Regreso (featured) -->
     <a class="card featured" href="https://form.typeform.com/to/d9qt7GWJ" target="_blank" rel="noopener">
       <span class="kicker">Mentoría grupal · Sin Tiquete de Regreso</span>
-      <h3>4 semanas conmigo</h3>
-      <p>4 semanas en vivo para armar tu salida al trabajo remoto, con acompañamiento real. Lista de espera abierta.</p>
+      <h3>Aplicaciones abiertas</h3>
+      <p>4 semanas conmigo en un contenedor pequeño para armar tu salida al trabajo remoto y viajes.</p>
       <span class="cta">Unirme a la lista de espera
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
@@ -286,6 +326,15 @@
       <h3>Ruta Remota</h3>
       <p>Todo lo que necesitás saber para conseguir tu primer trabajo remoto y ganar más $$$, si no sabés por dónde empezar. Incluye más de $88 en bonos.</p>
       <span class="cta">Ver el curso
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <!-- Plantilla CV Ganador (compact) -->
+    <a class="card compact" href="https://puravidatales.com/cv-ganador" target="_blank" rel="noopener">
+      <span class="kicker">Plantilla · CV Ganador · $15 (Inglés y Español)</span>
+      <p>Mi plantilla de CV exacta con la que he conseguido trabajos remotos.</p>
+      <span class="cta">Quiero la plantilla
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </a>
