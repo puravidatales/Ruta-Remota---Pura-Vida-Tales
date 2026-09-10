@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ruta Remota: Accedé a la grabación (replay) | Pura Vida Tales</title>
-<meta name="description" content="Grabación (replay) de Ruta Remota: el mapa real para conseguir tu primer trabajo remoto. 7 años de experiencia, 39 países, un sistema probado. Acceso completo a la grabación, disponible por tiempo limitado.">
+<title>Ruta Remota: Taller de 2 horas | Pura Vida Tales</title>
+<meta name="description" content="Ruta Remota: taller de 2 horas con el mapa real para conseguir tu primer trabajo remoto. 7 años de experiencia, 39 países, un sistema probado. Acceso disponible por tiempo limitado.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
@@ -320,6 +320,37 @@
     letter-spacing:.18em;text-transform:uppercase;color:var(--accent);
   }
 
+  /* ---------- screenshots / social proof ---------- */
+  #social-proof{background:var(--paper)}
+  .shot-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start;
+  }
+  .shot-card{
+    position:relative;overflow:hidden;background:var(--paper-2);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 22px 20px;
+  }
+  .shot-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+  .shot-card:nth-child(1)::before{background:var(--g-teal)}
+  .shot-card:nth-child(2)::before{background:var(--g-orange)}
+  .shot-card:nth-child(3)::before{background:var(--g-lilac)}
+  .shot-card img{
+    width:100%;height:auto;border-radius:10px;display:block;
+    box-shadow:0 1px 2px rgba(22,21,26,.06);
+  }
+  .shot-tag{
+    display:block;margin-top:16px;font-size:.66rem;font-weight:700;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--ink-faint);
+  }
+  @media (max-width:800px){
+    .shot-grid{grid-template-columns:1fr 1fr}
+    .shot-grid .shot-card:first-child{grid-column:1 / -1}
+  }
+  @media (max-width:520px){
+    .shot-grid{grid-template-columns:1fr}
+    .shot-grid .shot-card:first-child{grid-column:auto}
+  }
+
   /* ---------- price ladder ---------- */
   .ladder{
     margin:60px auto 0;max-width:720px;
@@ -395,19 +426,19 @@
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#top">Pura Vida Tales</a>
-    <span class="nav-date">Grabación (replay) disponible · Acceso por tiempo limitado</span>
-    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar la grabación</a>
+    <span class="nav-date">Taller de 2 horas · Disponible por tiempo limitado</span>
+    <a class="nav-cta" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar el taller</a>
   </div>
 </nav>
 
 <header class="hero grain" id="top">
   <div class="hero-inner">
-    <span class="hero-badge"><span class="live"></span> Grabación (replay) disponible · Acceso inmediato</span>
-    <p class="hero-times">El webinar en vivo del martes 4 de agosto ya pasó, pero tenés acceso a la grabación (replay) de inmediato por 7 días</p>
+    <span class="hero-badge"><span class="live"></span> Taller de 2 horas · Disponible por tiempo limitado</span>
+    <p class="hero-times">Acceso inmediato al taller completo en cuanto comprás</p>
     <h1 class="hero-title">Ruta Remota: <span class="serif">el mapa real</span> para conseguir tu primer trabajo remoto</h1>
     <div class="hero-top-cta">
       <span class="hero-top-price"><span class="hero-top-was">$67</span><span class="hero-top-now">$44</span></span>
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá la grabación (replay) por $44</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá el taller por $44</a>
       <span class="hero-bonus-line">Incluye $89 en bonos</span>
     </div>
     <div class="hero-reviews">
@@ -427,9 +458,9 @@
         <p class="sig">Participante del taller</p>
       </div>
     </div>
-    <p class="hero-sub">Si llevás meses diciendo <em>"quiero trabajar remoto pero no sé por dónde empezar"</em>, este es tu punto de partida. 2 horas de increíble valor y transformación, con todo lo que aprendí en 7 años diseñando una vida que amo, para que empieces a diseñar la tuya. El acceso a la grabación (replay) cierra pronto.</p>
+    <p class="hero-sub">Si llevás meses diciendo <em>"quiero trabajar remoto pero no sé por dónde empezar"</em>, este es tu punto de partida. 2 horas de increíble valor y transformación, con todo lo que aprendí en 7 años diseñando una vida que amo, para que empieces a diseñar la tuya. Disponible por tiempo limitado.</p>
     <div class="hero-price-card">
-      <span class="hpc-label">Acceso inmediato a la grabación (replay)</span>
+      <span class="hpc-label">Acceso inmediato al taller completo</span>
       <div class="hpc-steps">
         <div class="hpc-step now">
           <span class="hpc-price-row">
@@ -439,10 +470,10 @@
           <span class="hpc-step-note">2 horas de increíble valor y transformación</span>
         </div>
       </div>
-      <p class="hpc-note">El webinar en vivo ya pasó, pero podés tener acceso a la grabación (replay) de inmediato, disponible por 7 días completos. El precio sube a $67 en una semana.</p>
+      <p class="hpc-note">En cuanto comprás tenés acceso inmediato al taller completo. Disponible por tiempo limitado.</p>
     </div>
     <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá la grabación (replay) por $44</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprá el taller por $44</a>
       <span class="hero-bonus-line">+ $89 en bonos gratis al comprar</span>
     </div>
     <div class="hero-stats">
@@ -487,7 +518,7 @@
         <p class="echo">Esa era yo hace 7 años. El camino existe y te lo muestro completo.</p>
       </div>
     </div>
-    <p class="pains-closer reveal">Si marcaste una sola de estas, <span class="serif">este webinar es para vos.</span></p>
+    <p class="pains-closer reveal">Si marcaste una sola de estas, <span class="serif">este taller es para vos.</span></p>
   </div>
 </section>
 
@@ -533,7 +564,7 @@
         <span class="stop-dot">06</span>
         <span class="tagline">Acción</span>
         <h3>Tu roadmap: <span class="serif">qué hacer primero</span></h3>
-        <p>Salís con un paso a paso claro para tus próximas semanas, más las preguntas de otros asistentes respondidas en la grabación. Y te cuento cómo seguir después si querés ir más profundo.</p>
+        <p>Salís con un paso a paso claro para tus próximas semanas, más las preguntas de otros asistentes respondidas en el taller. Y te cuento cómo seguir después si querés ir más profundo.</p>
       </div>
     </div>
   </div>
@@ -556,7 +587,7 @@
       </div>
     </div>
     <div class="about-quote grain reveal">
-      <p class="big">"Pasé de 3 horas de tráfico al día a una vida que amo, diseñada por mí. Este webinar es el mapa de cómo lo hice, para que vos construyas la tuya."</p>
+      <p class="big">"Pasé de 3 horas de tráfico al día a una vida que amo, diseñada por mí. Este taller es el mapa de cómo lo hice, para que vos construyas la tuya."</p>
       <p class="sig">Caro · Pura Vida Tales</p>
     </div>
   </div>
@@ -566,18 +597,18 @@
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">Tu acceso incluye</span>
-      <h2>$89 en bonos y 7 años de experiencia <span class="serif">en una sola grabación</span></h2>
+      <h2>$89 en bonos y 7 años de experiencia <span class="serif">en un solo taller</span></h2>
     </div>
     <div class="offer-grid reveal">
       <div class="offer">
-        <span class="mini">Grabación</span>
+        <span class="mini">Taller</span>
         <h3>2 horas completas</h3>
-        <p>El webinar entero, tal como pasó en vivo el martes 4 de agosto. En español, sin cortes.</p>
+        <p>El taller completo, en español, sin cortes.</p>
       </div>
       <div class="offer">
         <span class="mini">Q&amp;A</span>
         <h3>Las preguntas de los asistentes</h3>
-        <p>La ronda de preguntas en vivo quedó incluida en la grabación, con casos reales de otras personas en tu misma situación.</p>
+        <p>La ronda de preguntas quedó incluida en el taller, con casos reales de otras personas en tu misma situación.</p>
       </div>
       <div class="offer">
         <span class="mini">Acceso</span>
@@ -615,23 +646,41 @@
     <p class="pains-closer reveal" style="margin-top:36px">$89 en bonos incluidos con tu acceso: <span class="serif">plantilla de CV, tracker de Notion y plantilla de cover letter.</span></p>
 
     <div class="ladder reveal">
-      <div class="tier past">
-        <span class="t-label">Webinar en vivo</span>
-        <div class="t-price">$33</div>
-        <p class="t-note">Ya pasó · Martes 4 de agosto</p>
-      </div>
       <div class="tier now">
-        <span class="t-label">Grabación</span>
+        <span class="t-label">Taller</span>
         <span class="t-price-row">
           <span class="t-was">$67</span>
           <span class="t-price">$44</span>
         </span>
-        <p class="t-note">2 horas de increíble valor y transformación · Sube a $67 en una semana</p>
+        <p class="t-note">2 horas de increíble valor y transformación · Disponible por tiempo limitado</p>
       </div>
     </div>
     <div class="ladder-cta reveal">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar la grabación (replay) por $44</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Comprar el taller por $44</a>
       <p>Pago seguro por Hotmart · Tarjeta de crédito o débito · Acceso inmediato por 7 días desde que comprás</p>
+    </div>
+  </div>
+</section>
+
+<section id="social-proof">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Mensajes reales</span>
+      <h2>Lo que dicen <span class="serif">después del taller</span></h2>
+    </div>
+    <div class="shot-grid reveal">
+      <div class="shot-card">
+        <img src="assets/testimonio-2.png" alt="Mensaje de una participante del taller Ruta Remota">
+        <span class="shot-tag">Mensaje directo</span>
+      </div>
+      <div class="shot-card">
+        <img src="assets/testimonio-1.png" alt="Mensaje de agradecimiento por el taller Ruta Remota">
+        <span class="shot-tag">Mensaje directo</span>
+      </div>
+      <div class="shot-card">
+        <img src="assets/testimonio-3.png" alt="Mensaje sobre el taller Ruta Remota">
+        <span class="shot-tag">Mensaje directo</span>
+      </div>
     </div>
   </div>
 </section>
@@ -645,18 +694,18 @@
     <div class="faq-list reveal">
       <details>
         <summary>¿Necesito experiencia previa en trabajo remoto?</summary>
-        <p>No. Este webinar está diseñado para quienes están empezando de cero o quieren pasar de un trabajo presencial a remoto. Si ya trabajás remoto y querés mejorar condiciones, también te va a servir, especialmente las paradas de CV, LinkedIn y negociación.</p>
+        <p>No. Este taller está diseñado para quienes están empezando de cero o quieren pasar de un trabajo presencial a remoto. Si ya trabajás remoto y querés mejorar condiciones, también te va a servir, especialmente las paradas de CV, LinkedIn y negociación.</p>
       </details>
       <details>
         <summary>¿Necesito hablar inglés?</summary>
-        <p>Para este webinar no: es 100% en español. Para el trabajo remoto, te lo digo sin filtro: con inglés es más fácil conseguir trabajo remoto y acceder a los mejores salarios. Pero solo con español también es posible, y en el webinar te muestro dónde están esas oportunidades y cómo mejorar tu inglés mientras aplicás, no después.</p>
+        <p>Para este taller no: es 100% en español. Para el trabajo remoto, te lo digo sin filtro: con inglés es más fácil conseguir trabajo remoto y acceder a los mejores salarios. Pero solo con español también es posible, y en el taller te muestro dónde están esas oportunidades y cómo mejorar tu inglés mientras aplicás, no después.</p>
       </details>
       <details>
-        <summary>¿Ya pasó el webinar en vivo, puedo comprar igual?</summary>
-        <p>Sí. El webinar en vivo fue el martes 4 de agosto, pero apenas comprás tenés acceso inmediato a la grabación completa. No te perdiste nada del contenido.</p>
+        <summary>¿Es en vivo o es grabado?</summary>
+        <p>Es un taller grabado: apenas comprás tenés acceso inmediato al contenido completo, para verlo cuando quieras y a tu ritmo.</p>
       </details>
       <details>
-        <summary>¿Cuánto tiempo tengo acceso a la grabación (replay)?</summary>
+        <summary>¿Cuánto tiempo tengo acceso al taller?</summary>
         <p>Acceso inmediato por 7 días completos desde que comprás. Una vez que se cierra, no vuelve a abrir, así que te recomiendo verlo apenas puedas.</p>
       </details>
       <details>
@@ -674,9 +723,9 @@
 <section class="final grain">
   <div class="final-inner reveal">
     <h2>Esto es. <span class="serif">No hay otra vuelta.</span><br>Tu vida remota empieza acá.</h2>
-    <p>2 horas. Un mapa completo. 7 años de experiencia real. Y una verdad simple: <strong>cuando se cierra el acceso a la grabación (replay), no vuelve a abrir.</strong></p>
+    <p>2 horas. Un mapa completo. 7 años de experiencia real. Y una verdad simple: <strong>cuando se cierra tu acceso, no vuelve a abrir.</strong></p>
     <div class="hero-cta-row">
-      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Quiero ver la grabación (replay) por $44</a>
+      <a class="btn-main" href="https://pay.hotmart.com/L106751215T?off=jzjj8mt8" rel="noopener">Quiero el taller por $44</a>
       <span class="hero-bonus-line">+ $89 en bonos gratis, solo por comprar ahora</span>
     </div>
   </div>
