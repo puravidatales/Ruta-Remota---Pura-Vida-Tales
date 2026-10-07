@@ -522,6 +522,29 @@
   .t-price-row{flex-wrap:wrap}
   .final .cd-box{margin-top:10px}
   .sb-price s{margin-right:4px}
+  .mid-cta{margin:40px auto 0;max-width:620px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 8px}
+  .mid-cta .mc-head{font-size:clamp(1.25rem,3.2vw,1.6rem);font-weight:800;line-height:1.25;letter-spacing:-.01em}
+  .mid-cta .mc-head .serif{font-weight:400;color:var(--accent)}
+  .mid-cta .mc-meta{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .mid-cta .mc-price{font-size:1.15rem;font-weight:800}
+  .mid-cta .mc-price s{color:var(--ink-faint);font-weight:700;margin-right:6px;text-decoration-color:var(--accent)}
+  .mid-cta .mc-price strong{color:var(--accent);font-size:1.5rem}
+  .mid-cta .mc-note{font-size:.85rem;font-weight:600;color:var(--ink-soft)}
+  .mid-cta.dark{background:none}
+  .mid-cta.dark .mc-head{color:var(--paper)}
+  .mid-cta.dark .mc-head .serif{color:var(--g-orange)}
+  .mid-cta.dark .btn-main{background:var(--g-orange);color:var(--ink)}
+  .mid-cta.dark .mc-price s{color:rgba(244,243,240,.45)}
+  .mid-cta.dark .mc-price strong{color:var(--g-orange)}
+  .mid-cta.dark .mc-note{color:rgba(244,243,240,.65)}
+  .timer{display:inline-flex;align-items:center;gap:6px;margin:6px 0 4px;padding:8px 14px;border-radius:12px;
+    background:color-mix(in srgb, var(--paper) 55%, transparent);border:1px solid var(--line)}
+  .timer .t-lbl{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-right:6px}
+  .timer .t-u{display:flex;flex-direction:column;align-items:center;min-width:30px;line-height:1}
+  .timer .t-u b{font-size:1.15rem;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+  .timer .t-u i{font-style:normal;font-size:.58rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);margin-top:3px}
+  .timer .t-sep{font-weight:800;color:var(--ink-faint);margin-top:-12px}
+  @media(max-width:420px){.timer .t-lbl{display:none}}
 </style>
 </head>
 <body>
@@ -535,7 +558,7 @@
   <div class="nav-inner">
     <a class="nav-logo" href="#top">Pura Vida Tales</a>
     <span class="nav-date">Curso nuevo · 100% a tu ritmo</span>
-    <a class="nav-cta js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi Ruta Remota</a>
+    <a class="nav-cta js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Empezar ahora</a>
   </div>
 </nav>
 
@@ -555,14 +578,16 @@
     </ul>
     <div class="hero-top-cta">
       <span class="hero-top-price big"><span class="hero-top-was">$67</span><span class="hero-top-was">$47</span><span class="hero-top-now">$37</span></span>
-      <span class="price-label">Precio exclusivo para suscriptores por 48 horas</span>
-      <ul class="ladder-mini"><li class="on"><b>$37</b> Suscriptores · ahora</li><li><b>$47</b> Lanzamiento público</li><li><b>$67</b> Precio regular</li></ul>
-      <a class="btn-main btn-xl js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi Ruta Remota</a>
-      <span class="micro">Pago seguro por Hotmart · Acceso inmediato · Incluye 3 bonos</span>
-      <div class="cd-box">
-        <span class="cd-label">Tu precio exclusivo termina en</span>
-        <span class="cd js-cd">00d 00h 00m 00s</span>
+      <span class="price-label">Precio exclusivo para suscriptores hasta el viernes</span>
+      <div class="timer" aria-label="Tiempo restante del precio exclusivo">
+        <span class="t-lbl">Termina en</span>
+        <span class="t-u"><b class="js-d">00</b><i>días</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-h">00</b><i>horas</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-m">00</b><i>min</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-s">00</b><i>seg</i></span>
       </div>
+      <a class="btn-main btn-xl js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero trabajar remoto</a>
+      <span class="micro">Pago seguro por Hotmart · Después del viernes sube a $47 y luego a $67</span>
     </div>
     <div class="creator">
       <span class="creator-label">Curso creado por Caro Zúñiga</span>
@@ -622,6 +647,10 @@
       </div>
     </div>
     <p class="pains-closer reveal">Si te identificaste con una sola de la primera lista, <span class="serif">este curso es para vos.</span></p>
+    <div class="mid-cta reveal">
+      <a class="btn-main btn-xl js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Sí, esto es para mí</a>
+      <p class="mc-note">$37 hasta el viernes · Precio exclusivo para suscriptores</p>
+    </div>
   </div>
 </section>
 
@@ -692,6 +721,11 @@
         <p>Repasamos toda la ruta y salís sabiendo cuál es tu próximo movimiento.</p>
       </div>
     </div>
+    <div class="mid-cta dark reveal">
+      <p class="mc-head">7 paradas. Un mapa claro. <span class="serif">Empezás hoy.</span></p>
+      <a class="btn-main btn-xl js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero empezar mi ruta</a>
+      <p class="mc-note">$37 hasta el viernes · Precio exclusivo para suscriptores</p>
+    </div>
   </div>
 </section>
 
@@ -755,6 +789,11 @@
         <span class="shot-tag">Mensaje directo</span>
       </div>
     </div>
+    <div class="mid-cta reveal">
+      <p class="mc-head">Otras personas ya dieron el primer paso. <span class="serif">Ahora te toca a vos.</span></p>
+      <a class="btn-main btn-xl js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero ser la próxima historia</a>
+      <p class="mc-note">$37 hasta el viernes · Precio exclusivo para suscriptores</p>
+    </div>
   </div>
 </section>
 
@@ -774,7 +813,7 @@
     </div>
     <div class="moment-done" id="momentDone" hidden>
       <p class="serif">Ya decidiste. Ahora te toca el primer paso.</p>
-      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Ya decidí. Quiero mi Ruta Remota</a>
+      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Ya decidí. Quiero dar el salto</a>
     </div>
   </div>
 </section>
@@ -819,8 +858,8 @@
       </div>
     </div>
     <div class="ladder-cta reveal">
-      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi Ruta Remota</a>
-      <p>Precio exclusivo para suscriptores hasta el jueves 8 de octubre a las 11:59 p.m. (hora de Costa Rica). Después sale al público a $47 y luego sube a $67.</p>
+      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi acceso por $37</a>
+      <p>Precio exclusivo para suscriptores hasta el viernes 9 de octubre a las 11:59 p.m. (hora de Costa Rica). Después sale al público a $47 y luego sube a $67.</p>
       <p>Pago seguro por Hotmart · Tarjeta de crédito o débito · Acceso inmediato</p>
     </div>
   </div>
@@ -875,9 +914,15 @@
     <p>Mi vida remota empezó con una decisión. Esta puede ser la tuya.</p>
     <div class="hero-cta-row">
       <span class="hero-top-price"><span class="hero-top-was">$67</span><span class="hero-top-was">$47</span><span class="hero-top-now" style="color:var(--accent)">$37</span></span>
-      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi Ruta Remota</a>
-      <span class="micro">Exclusivo para suscriptores. Termina el jueves a las 11:59 p.m. (hora de Costa Rica).</span>
-      <div class="cd-box"><span class="cd-label">Tu precio exclusivo termina en</span><span class="cd js-cd">00d 00h 00m 00s</span></div>
+      <a class="btn-main js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero trabajar desde donde quiera</a>
+      <span class="micro">Exclusivo para suscriptores. Termina el viernes 9 de octubre a las 11:59 p.m. (hora de Costa Rica).</span>
+      <div class="timer" aria-label="Tiempo restante del precio exclusivo">
+        <span class="t-lbl">Termina en</span>
+        <span class="t-u"><b class="js-d">00</b><i>días</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-h">00</b><i>horas</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-m">00</b><i>min</i></span><span class="t-sep">:</span>
+        <span class="t-u"><b class="js-s">00</b><i>seg</i></span>
+      </div>
     </div>
   </div>
 </section>
@@ -892,22 +937,29 @@
 
 <div class="sticky-bar" id="stickyBar">
   <span class="sb-price"><s>$67</s> <s>$47</s> <strong>$37</strong></span>
-  <a class="sb-btn js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Quiero mi Ruta Remota</a>
+  <a class="sb-btn js-buy" href="https://pay.hotmart.com/X107733108K?off=orm6ox4u" rel="noopener">Empezar ahora</a>
 </div>
 
 <script>
 (function(){
-  var DEADLINE = new Date('2026-10-08T23:59:59-06:00').getTime(); // jueves 11:59 p.m. hora de Costa Rica
+  var DEADLINE = new Date('2026-10-09T23:59:59-06:00').getTime(); // viernes 9 de octubre, 11:59 p.m. hora de Costa Rica
   var PUBLIC_PAGE = '/cursos/ruta-remota';
   function $all(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); }
-  if(Date.now() >= DEADLINE){ location.replace(PUBLIC_PAGE); return; }
+  function goPublic(){
+    // evita un loop si esta misma página está publicada en /cursos/ruta-remota
+    if(location.pathname.replace(/\.html$/,'').replace(/\/$/,'') === PUBLIC_PAGE) return;
+    location.replace(PUBLIC_PAGE);
+  }
+  if(Date.now() >= DEADLINE){ goPublic(); return; }
   var pad = function(n){ return (n < 10 ? '0' : '') + n; };
   var tick = function(){
     var ms = DEADLINE - Date.now();
-    if(ms <= 0){ location.replace(PUBLIC_PAGE); return; }
+    if(ms <= 0){ goPublic(); return; }
     var x = Math.floor(ms / 1000);
     var txt = pad(Math.floor(x / 86400)) + 'd ' + pad(Math.floor(x % 86400 / 3600)) + 'h ' + pad(Math.floor(x % 3600 / 60)) + 'm ' + pad(x % 60) + 's';
     $all('.js-cd').forEach(function(el){ el.textContent = txt; });
+    var u = {d: Math.floor(x / 86400), h: Math.floor(x % 86400 / 3600), m: Math.floor(x % 3600 / 60), s: x % 60};
+    ['d','h','m','s'].forEach(function(k){ $all('.js-' + k).forEach(function(el){ el.textContent = pad(u[k]); }); });
     document.getElementById('cdStrip').textContent = txt;
   };
   tick(); setInterval(tick, 1000);
